@@ -15,7 +15,12 @@ class SoundData {
     'date': date,
   };
 
-  static SoundData fromMap(Map map) => SoundData();
+  static SoundData fromMap(Map map) => SoundData(
+    sId: map["sId"],
+    averageDecibel: map["averageDecibel"],
+    maxDecibel: map["maxDecibel"],
+    date: map["date"]
+  );
 }
 
 /// 지정된 DateTime 값을 정제된 문자열로 파싱합니다.
