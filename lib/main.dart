@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/HomePage.dart';
+import 'package:flutterapp/HistoryPage.dart';
 
+/// main 함수
+/// Flutter 앱의 첫 시작은 여기부터입니다.
 void main() {
   runApp(MyApp());
 }
 
+/// 처음에 실행시켜줄 화면을 보여줍니다.
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -14,23 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: '설리번 프로젝트'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  MyHomePage({this.title}) : super();
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(
-        child: Text(title),
-      ),
+//      home: HomePage(),
+      home: HistoryPage(title: '설리번 프로젝트'),
     );
   }
 }
