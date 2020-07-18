@@ -13,7 +13,7 @@ class HistoryPage extends StatefulWidget {
   State<StatefulWidget> createState() => HistoryPageState();
 }
 
-class HistoryPageState extends State<StatefulWidget> {
+class HistoryPageState extends State<HistoryPage> {
   List<SoundData> history = List();
 
   @override
