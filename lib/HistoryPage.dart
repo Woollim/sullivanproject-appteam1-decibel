@@ -12,7 +12,22 @@ class HistoryPageState extends State<StatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("층간소음 녹음내역")),
-      body: Center(child: Text("여러분 모두 만나서 반가워요")),
+      body: Center(child: Text(star())),
     );
+  }
+
+  String star() {
+    String str = "";
+    for (int i = 0; i < 5; i++) {
+      for (int j = 0; j <= i; j++) {
+        str = str + "*";
+      }
+
+      str += "\n";
+    }
+
+    print(str);
+
+    return str;
   }
 }
