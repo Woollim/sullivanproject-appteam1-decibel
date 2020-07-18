@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// 소음 측정 내역을 보여주는 화면
+/// 첫 페이지에서 우측 상단 버튼을 누르면 볼 수 있는 화면입니다.
 class HistoryPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => HistoryPageState();

@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/HomePage.dart';
 import 'package:flutterapp/HistoryPage.dart';
 
+/// main 함수
+/// Flutter 앱의 첫 시작은 여기부터입니다.
 void main() {
   runApp(MyApp());
 }
 
+/// 처음에 실행시켜줄 화면을 보여줍니다.
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
