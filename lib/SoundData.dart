@@ -10,10 +10,10 @@ class SoundData {
   SoundData({this.sId, this.averageDecibel, this.maxDecibel, this.date});
 
   Map<String, dynamic> toMap() => {
-        'averageDecibel': averageDecibel,
-        'maxDecibel': maxDecibel,
-        'date': date,
-      };
+    'averageDecibel': averageDecibel,
+    'maxDecibel': maxDecibel,
+    'date': date,
+  };
 
   static SoundData fromMap(Map map) => SoundData();
 }
