@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-//      home: HomePage(),
-      home: HistoryPage(title: "층간소음 녹음내역"),
+      home: HomePage(),
+//      home: HistoryPage(title: "층간소음 녹음내역"),
     );
   }
 }
