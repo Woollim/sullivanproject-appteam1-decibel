@@ -43,10 +43,4 @@ class SqliteUtil {
       );
     }).reversed.toList();
   }
-
-  static List<SoundData> getAll() {
-    getSoundData().then((value) {
-      return value;
-    });
-  }
 }
