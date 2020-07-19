@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 //      home: HomePage(),
-      home: HistoryPage(title: '설리번 프로젝트'),
+      home: HistoryPage(),
     );
   }
 }
