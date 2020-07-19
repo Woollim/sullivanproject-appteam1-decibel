@@ -20,24 +20,10 @@ class HistoryPageState extends State<HistoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("층간소음 녹음내역")),
-      body: Center(child: Text(star())),
+      body: Center(child: Text("여러분 모두 만나서 반가워요")),
     );
   }
 
-  String star() {
-    String str = "";
-    for (int i = 0; i < 5; i++) {
-      for (int j = 0; j <= i; j++) {
-        str = str + "*";
-      }
-
-      str += "\n";
-    }
-
-    print(str);
-
-    return str;
-  }
   /// DB로부터 데이터를 받아옵니다.
   void getAll() {
     SqliteUtil.getSoundData().then((value) {
