@@ -20,6 +20,14 @@ class HistoryPageState extends State<HistoryPage> {
     );
   }
 
+  /// 한 줄에 보여줄 데이터를 만듭니다. */
+  Widget generateRow(BuildContext context, int index) {
+  }
+
+  /// 스타일링된 텍스트뷰를 반환한다. */
+  Widget generateBorderText(BuildContext context, double ratio, String text) {
+  }
+
   /// DB로부터 데이터를 받아옵니다.
   void getAll() {
     SqliteUtil.getSoundData().then((value) {
